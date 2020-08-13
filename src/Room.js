@@ -12,7 +12,7 @@ function Room() {
     return (
     <div className = {"room "+(isLit? "lit":"dark")}>
         <br />     
-        The Room is {isLit? "lit":"dark"} <br /> Press button to change that :)
+        The Webpage is {isLit? "lit":"dark"} <br /> Press button to change that :)
         <br />
         <br />
         <button onClick={() => setLit(!isLit)} > ON/OFF </button>
