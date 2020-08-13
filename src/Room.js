@@ -1,10 +1,25 @@
-import React from 'react';
+import React, {useState} from 'react';
 
 
 function Room() {
-  return (
+    const [isLit, setLit] = useState(false);
+    const [age, setAge] = useState(26);
+    function updateLit() {
+        console.log("Button Clicked");
+    }
+    return (
     <div>
-        This is Room components 
+        The Room is {isLit? "lit":"dark"}
+        <br />
+        Age: {age}
+        <br />
+        <button onClick={() => setLit(!isLit)} > ON/OFF </button>
+        <br />
+        <button onClick={() => setAge(age+1)} > Increase Age </button>
+        <br />
+        <button onClick={() => setAge(age-1)} > Decrease Age </button>
+        <br />
+        <button onClick={() => setAge(0)} > Set Zero </button>
     </div>
   );
 }
