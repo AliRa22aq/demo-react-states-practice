@@ -11,7 +11,6 @@ function Room() {
 
     return (
     <div className = {"room "+(isLit? "lit":"dark")}>
-        <br />
         <br />     
         The Room is {isLit? "lit":"dark"} <br /> Press button to change that :)
         <br />
@@ -35,6 +34,11 @@ function Room() {
         <button onClick={() => setTemp(temp-1)} > - </button>  
         <button onClick={() => setTemp(22)} > Default </button>
         <button onClick={() => setTemp(temp+1)} > + </button>
+        <br /> <br />
+        
+        <div className="name"> Made by Ali </div>
+
+        
 
     </div>
   );
