@@ -6,7 +6,7 @@ function Room() {
     let [isLit, setLit] = useState(false);
     let [age, setAge] = useState(26);
     let [temp, setTemp] = useState(22);
-    const bbb = isLit? "lit" : "dark";
+
 
     return (
     <div className = {"room "+(isLit? "lit":"dark")}>
