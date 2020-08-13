@@ -20,6 +20,8 @@ function Room() {
         <button onClick={() => setAge(age-1)} > Decrease Age </button>
         <br />
         <button onClick={() => setAge(0)} > Set Zero </button>
+        <br />
+        <button onClick={() => setAge(100)} > Set Hundered </button>
     </div>
   );
 }
